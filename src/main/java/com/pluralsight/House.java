@@ -53,23 +53,19 @@ public class House extends Asset
     {
         if(this.condition == 4)
         {
-            this.squareFoot = lotSize*lotSize;
-            return 180.00 + (this.squareFoot / .25);
+            return 180.00 * this.squareFoot + (.25 * (lotSize*lotSize));
         }
         if(this.condition == 3)
         {
-            this.squareFoot = lotSize*lotSize;
-            return 130.00 + (this.squareFoot / .25);
+            return 130.00 * this.squareFoot + (.25 * (lotSize*lotSize));
         }
         if(this.condition == 2)
         {
-            this.squareFoot = lotSize*lotSize;
-            return 90.00 + (this.squareFoot / .25);
+            return 90.00 * this.squareFoot + (.25 * (lotSize*lotSize));
         }
         if(this.condition == 1)
         {
-            this.squareFoot = lotSize*lotSize;
-            return 80.00 + (this.squareFoot / .25);
+            return 80.00 * this.squareFoot + (.25 * (lotSize*lotSize));
         }
         return 0.00;
     }
