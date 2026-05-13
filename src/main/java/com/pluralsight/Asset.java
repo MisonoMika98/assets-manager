@@ -38,7 +38,7 @@ public class Asset
 
 
 
-    public Double getValue()
+    public double getValue()
     {
         return originalCost;
     }

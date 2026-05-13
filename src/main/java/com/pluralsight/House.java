@@ -49,7 +49,7 @@ public class House extends Asset
     }
 
     @Override
-    public Double getValue()
+    public double getValue()
     {
         if(this.condition == 4)
         {
