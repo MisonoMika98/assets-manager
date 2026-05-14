@@ -24,7 +24,7 @@ public class Main {
             House house = (House) assets.get(0);
             message = "House at " + house.getAddress();
         }
-        else if (assets.get(2) instanceof Vehicle){
+        if (assets.get(2) instanceof Vehicle){
             Vehicle vehicle = (Vehicle) assets.get(2);
             message = "Vehicle: " + vehicle.getYear() + " " + vehicle.getMakeModel();
         }
