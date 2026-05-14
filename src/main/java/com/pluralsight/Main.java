@@ -19,16 +19,18 @@ public class Main {
         }
 
         String message = "";
+        String message2 = "";
 
         if (assets.get(0) instanceof House){
             House house = (House) assets.get(0);
             message = "House at " + house.getAddress();
         }
-        else if (assets.get(2) instanceof Vehicle){
+        if (assets.get(2) instanceof Vehicle){
             Vehicle vehicle = (Vehicle) assets.get(2);
-            message = "Vehicle: " + vehicle.getYear() + " " + vehicle.getMakeModel();
+            message2 = "Vehicle: " + vehicle.getYear() + " " + vehicle.getMakeModel();
         }
         System.out.println();
         System.out.println(message);
+        System.out.println(message2);
     }
 }
